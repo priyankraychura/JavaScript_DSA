@@ -34,4 +34,6 @@ do{
     
 } while(sorted && i)
 
+
 console.log(arr);
+
