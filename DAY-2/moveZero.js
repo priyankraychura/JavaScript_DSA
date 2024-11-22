@@ -1,6 +1,6 @@
 // Move all zero in last of array
 
-let arr = [1,2,3,0,5,0,0,5,6]
+let arr = [45, 2, 0, 44, 0, 7, 5, 8, 0]
 let newArr = [];
 let zeros = [];
 
