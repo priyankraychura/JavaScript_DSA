@@ -1,5 +1,5 @@
 const arr = [6, 3, 8, 5, 2];  
-
+let swapsCount = 0;
 let sorted = false;
 
 for(let j=0; j<arr.length; j++){
@@ -8,6 +8,7 @@ for(let j=0; j<arr.length; j++){
             let temp = arr[i];
             arr[i] = arr[i+1];
             arr[i+1] = temp;
+            swapsCount++;
 
             sorted = true;
         } 
@@ -18,4 +19,5 @@ for(let j=0; j<arr.length; j++){
     }
 }
 
+console.log("Swaps required are: ", swapsCount);
 console.log(arr);
