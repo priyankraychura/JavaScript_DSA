@@ -1,9 +1,11 @@
-function fibonacci(n, fib, sum){
-    if(n == 5){
-        return sum;
+function fibonacci(n, first, second){
+    if(n == 0){
+        console.log(first);
+        return;
     }
 
-    return sum + fibonacci(n+1, fib + sum, sum)
+    n -= 1;
+    return first + fibonacci(n, second, first + second);
 }
 
-console.log(fibonacci(5, 0, 0))
+fibonacci(7, 0, 1)
