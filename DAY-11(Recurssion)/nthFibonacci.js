@@ -1,11 +1,10 @@
 function fibonacci(n, first, second){
     if(n == 0){
         console.log(first);
-        return;
+        return 0;
     }
 
-    n -= 1;
-    return first + fibonacci(n, second, first + second);
+    return first + fibonacci(n - 1, second, first + second);
 }
 
 fibonacci(7, 0, 1)
