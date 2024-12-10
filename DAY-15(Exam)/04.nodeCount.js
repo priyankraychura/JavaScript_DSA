@@ -23,10 +23,18 @@ function insertNodeAtTail(head, data) {
 }
 
 let llist = new Node();
-let count = 0;
+
 for(let i=0; i<arr.length; i++){
-    const llist_head = insertNodeAtTail(llist.head, arr[i]);
+    const llist_head = insertNodeAtTail(llist.next, arr[i]);
     llist.next = llist_head;
+}
+
+let count = 0;
+let temp = llist;
+
+while(temp != null){
+    console.log(temp.data);
+    temp = temp.next;
     count++;
 }
 
