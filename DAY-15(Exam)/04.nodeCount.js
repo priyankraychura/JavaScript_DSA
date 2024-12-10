@@ -22,11 +22,10 @@ function insertNodeAtTail(head, data) {
     return head;
 }
 
-let llist = new Node();
+let llist = null;
 
 for(let i=0; i<arr.length; i++){
-    const llist_head = insertNodeAtTail(llist.next, arr[i]);
-    llist.next = llist_head;
+    llist = insertNodeAtTail(llist, arr[i]);
 }
 
 let count = 0;
