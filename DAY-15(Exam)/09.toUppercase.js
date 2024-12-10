@@ -2,9 +2,8 @@ let str = "hello world";
 let newStr = "";
 
 for(let i=0; i<str.length; i++){
-    if(str[i] == " "){
-        newStr += str[i + 1].toUpperCase();
-        continue;
+    if(i == 0 || str[i - 1] == " "){
+        newStr += str[i].toUpperCase();
     } else{
         newStr += str[i];
     }
