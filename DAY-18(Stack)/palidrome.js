@@ -34,7 +34,7 @@ class Stack {
     }
 }
 
-let str = "kanak";
+let str = "nayan";
 let stk = new Stack();
 
 for(let char of str){
