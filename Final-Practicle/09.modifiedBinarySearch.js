@@ -1,5 +1,5 @@
 let arr = [4, 5, 6, 7, 0, 1, 2];
-const target = 0;
+const target = 3;
 let start = 0;
 let end = arr.length - 1;
 
